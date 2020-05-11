@@ -6,6 +6,8 @@
 
 (function($) {
 
+	
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#page-wrapper'),
@@ -80,4 +82,26 @@
 
 		}
 
+
 })(jQuery);
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter
+	// .typeString('I am a Student')
+    // .pauseFor(1000)
+	// .deleteAll()
+	.typeString('Passionate about ')
+    .typeString('<strong>AI</strong>')
+	.pauseFor(700)
+	.deleteChars(2)
+	.typeString('<strong>ML</strong>')
+    .pauseFor(700)
+    .deleteChars(2)
+    .typeString('<strong>New Innovations!</strong>')
+    .pauseFor(1000)
+    .start();
