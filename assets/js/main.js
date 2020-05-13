@@ -4,6 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+	
+
 (function($) {
 
 	
@@ -84,7 +86,6 @@
 
 
 })(jQuery);
-
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
@@ -104,4 +105,5 @@ typewriter
     .deleteChars(2)
     .typeString('<strong>New Innovations!</strong>')
     .pauseFor(1000)
-    .start();
+	.start();
+
