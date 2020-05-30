@@ -19,7 +19,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 0; 
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -2703,19 +2703,19 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: rgba(0, 0, 0);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: rgba(0, 0, 0);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: rgba(0, 0, 0);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: rgba(0, 0, 0);
 		}
 
 		.spotlight:nth-child(5) {
