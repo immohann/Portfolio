@@ -290,6 +290,9 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.fab:hover{
+		border-bottom: transparent;
+	}
 /* Row */
 
 	.row {
@@ -2079,6 +2082,7 @@ input, select, textarea {
 
 				.icon.major {
 					font-size: 1em;
+				
 				}
 
 			}
