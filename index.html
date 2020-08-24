@@ -237,7 +237,7 @@ text-transform: uppercase;
 <div class="box-container">
 	<div class="box-item">
     <div class="flip-box">
-      <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+      <div class="flip-box-front text-center" style="background-image: url('images/crisis.jpg');">
         <div class="inner color-white">
 		  <h3 class="flip-box-header">Crisis Management</h3>
 		  
@@ -245,81 +245,136 @@ text-transform: uppercase;
           <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
         </div>
       </div>
-      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+      <div class="flip-box-back text-center"  id="img1" style="background-image: url('images/cris.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
         <div class="inner color-white">
-          <h3 class="flip-box-header">About</h3>
-		  <p >A multi-lingual web application to alert users regarding upcoming, and current disaster news along with nearby health centers details. <br> 
+          <h3 class="flip-box-header" id="sh1" >About</h3>
+		  <p  id="sh2">A multi-lingual web application to alert users regarding upcoming, and current disaster news along with nearby health centers details. <br> 
 			<br> Modules: <br>Named Entity Recognition  |  Disaster Classifier  |  Disaster type classifier  </p>
-		  
-	
-		  <a href="#" style="outline: none; border-bottom: solid 1px transparent;"> <button class="flip-box-button"> Learn More</button> </a>
-
+		  <button id="btn1"  onmouseover="ch1()" onmouseout="ch2()" class="flip-box-button"> Hover Demo</button>
+<script> 
+function ch1() {
+document.getElementById("img1").style.backgroundImage = "url('images/denoiz.gif')";
+document.getElementById("sh1").style.color = "transparent";
+document.getElementById("sh2").style.color = "transparent";
+document.getElementById("btn1").style.color = "transparent";
+document.getElementById("btn1").style.borderColor = "transparent";
+}
+function ch2() {
+document.getElementById("img1").style.backgroundImage = "url('images/cris.jpg')";
+document.getElementById("sh1").style.color = "white";
+document.getElementById("sh2").style.color = "white";
+document.getElementById("btn1").style.color = "white";
+document.getElementById("btn1").style.borderColor = "white";
+}
+</script> 
         </div>
       </div>
     </div>
 	</div>
+
+
 	<div class="box-item">
     <div class="flip-box">
-      <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+      <div class="flip-box-front text-center" style="background-image: url('images/face.jpg');">
         <div class="inner color-white">
           <h3 class="flip-box-header">Live-Face Recognition</h3>
           <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
         </div>
       </div>
-      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+      <div class="flip-box-back text-center" id="img2" style="background-image: url('images/facee.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
         <div class="inner color-white">
-          <h3 class="flip-box-header">About</h3>
-          <p>A short sentence describing this callout is.</p>
-		  <a href="#" style="outline: none; border-bottom: solid 1px transparent;"> <button class="flip-box-button"> Learn More</button> </a>
-
+          <h3  id="sh3" class="flip-box-header">About</h3>
+          <p  id="sh4">A short sentence describing this callout is.</p>
+		   <button id="btn2"  onmouseover="ch3()" onmouseout="ch4()"  class="flip-box-button"> Hover Demo</button>
+<script> 
+function ch3() {
+document.getElementById("img2").style.backgroundImage = "url('images/lyrics.gif')";
+document.getElementById("sh3").style.color = "transparent";
+document.getElementById("sh4").style.color = "transparent";
+document.getElementById("btn2").style.color = "transparent";
+document.getElementById("btn2").style.borderColor = "transparent";
+}
+function ch4() {
+document.getElementById("img2").style.backgroundImage = "url('images/facee.jpg')";
+document.getElementById("sh3").style.color = "white";
+document.getElementById("sh4").style.color = "white";
+document.getElementById("btn2").style.color = "white";
+document.getElementById("btn2").style.borderColor = "white";
+}
+</script> 
         </div>
       </div>
     </div>
 	</div>
+
+
 	<div class="box-item">
     <div class="flip-box">
-      <div class="flip-box-front text-center filter-" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+      <div class="flip-box-front text-center filter-" style="background-image: url('images/wave.jpg');">
         <div class="inner color-white">
           <h3 class="flip-box-header">De-Noiser</h3>
           <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
         </div>
       </div>
-      <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+      <div class="flip-box-back text-center" id="img3" style="background-image: url('images/wavee.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
         <div class="inner color-white">
-          <h3 class="flip-box-header">About</h3>
-          <p>A short sentence describing this callout is.</p>
-		  <a href="#" style="outline: none; border-bottom: solid 1px transparent;"> <button class="flip-box-button"> Learn More</button> </a>
-
+          <h3  id="sh5" class="flip-box-header">About</h3>
+          <p  id="sh6"> A short sentence describing this callout is.</p>
+		  <button id="btn3" onmouseover="ch5()" onmouseout="ch6()"  class="flip-box-button"> Hover Demo</button> 
+<script> 
+function ch5() {
+document.getElementById("img3").style.backgroundImage = "url('images/denoiz.gif')";
+document.getElementById("sh5").style.color = "transparent";
+document.getElementById("sh6").style.color = "transparent";
+document.getElementById("btn3").style.color = "transparent";
+document.getElementById("btn3").style.borderColor = "transparent";
+}
+function ch6() {
+document.getElementById("img3").style.backgroundImage = "url('images/wavee.jpg')";
+document.getElementById("sh5").style.color = "white";
+document.getElementById("sh6").style.color = "white";
+document.getElementById("btn3").style.color = "white";
+document.getElementById("btn3").style.borderColor = "white";
+}
+</script> 
         </div>
       </div>
     </div>
 	</div>
 </div>
+																			<!-- LYRICS -->
 
 <section id="one" class="wrapper style1 " style="background-color: black; margin-top: 0px; padding-top: 0px;;">
 	<div class="box-container">
 		<div class="box-item">
 		<div class="flip-box">
-		  <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+		  <div class="flip-box-front text-center" style="background-image: url('images/words.jpg');">
 			<div class="inner color-white">
 			  <h3 class="flip-box-header">Lyrics Inducer</h3>
 			  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
 			</div>
 		  </div>
-		  <div class="flip-box-back text-center" id="img4" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
-			<div class="inner color-white">
-			  <h3 class="flip-box-header">About</h3>
-			  <p>A short sentence describing this callout is.</p>
-			  <a href="#" style="outline: none; border-bottom: solid 1px transparent;" id="btn4"></a> <button class="flip-box-button"> Learn More</button> </a>
-		<script> 
-		$(document).ready(function() { 
-			// Change background image of a div by clicking on the button 
-			$("#btn4").click(function() { 
-				var imageUrl = "/image/lyrics.gif"; 
-				$("#img4").css("background-image", "url(" + imageUrl + ")"); 
-			}); 
-		}); 
-	</script> 
+		  <div class="flip-box-back text-center" id="img4" style="background-image: url('images/wordss.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
+			<div class="inner color-white" >
+			  <h3 class="flip-box-header" id="sh7">About</h3>
+			  <p id="sh8">A short sentence describing this callout is.</p>
+			   <button id="btn4" onmouseover="ch7()" onmouseout="ch8()" class="flip-box-button">Hover Demo</button>
+<script> 
+function ch7() {
+document.getElementById("img4").style.backgroundImage = "url('images/lyrics.gif')";
+document.getElementById("sh7").style.color = "transparent";
+document.getElementById("sh8").style.color = "transparent";
+document.getElementById("btn4").style.color = "transparent";
+document.getElementById("btn4").style.borderColor = "transparent";
+}
+function ch8() {
+document.getElementById("img4").style.backgroundImage = "url('images/wordss.jpg')";
+document.getElementById("sh7").style.color = "white";
+document.getElementById("sh8").style.color = "white";
+document.getElementById("btn4").style.color = "white";
+document.getElementById("btn4").style.borderColor = "white";
+}
+</script> 
 
 
 			</div>
@@ -328,36 +383,66 @@ text-transform: uppercase;
 		</div>
 		<div class="box-item">
 		<div class="flip-box">
-		  <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+		  <div class="flip-box-front text-center" style="background-image: url('images/msk.jpg');">
 			<div class="inner color-white">
 			  <h3 class="flip-box-header">Early-COVID Prediction</h3>
 			  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
 			</div>
 		  </div>
-		  <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/hj4c4qnov/cta-3.png');">
+		  <div class="flip-box-back text-center" id="img5" style="background-image: url('images/mskk.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
 			<div class="inner color-white">
-			  <h3 class="flip-box-header">About</h3>
-			  <p>A short sentence describing this callout is.</p>
-			  <a href="#" style="outline: none; border-bottom: solid 1px transparent;"> <button class="flip-box-button"> Learn More</button> </a>
-
+			  <h3  id="sh9" class="flip-box-header">About</h3>
+			  <p  id="sh10">A short sentence describing this callout is.</p>
+			 <button id="btn5"  onmouseover="ch9()" onmouseout="ch10()" class="flip-box-button"> Hover Demo</button> 
+<script> 
+function ch9() {
+document.getElementById("img5").style.backgroundImage = "url('images/lyrics.gif')";
+document.getElementById("sh9").style.color = "transparent";
+document.getElementById("sh10").style.color = "transparent";
+document.getElementById("btn5").style.color = "transparent";
+document.getElementById("btn5").style.borderColor = "transparent";
+}
+function ch10() {
+document.getElementById("img5").style.backgroundImage = "url('images/mskk.jpg')";
+document.getElementById("sh9").style.color = "white";
+document.getElementById("sh10").style.color = "white";
+document.getElementById("btn5").style.color = "white";
+document.getElementById("btn5").style.borderColor = "white";
+}
+</script> 
 			</div>
 		  </div>
 		</div>
 		</div>
 		<div class="box-item">
 		<div class="flip-box">
-		  <div class="flip-box-front text-center filter-" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+		  <div class="flip-box-front text-center filter-" style="background-image: url('images/chat.jpg');">
 			<div class="inner color-white">
 			  <h3 class="flip-box-header">Agricultural RASA Chatbot</h3>
 			  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
 			</div>
 		  </div>
-		  <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png');">
+		  <div class="flip-box-back text-center" id="img6" style="background-image: url('images/chatt.jpg');background-attachment:scroll; background-size: cover	 ; background-repeat: no-repeat; transition: 0.6s ease;">
 			<div class="inner color-white">
-			  <h3 class="flip-box-header">About</h3>
-			  <p>A short sentence describing this callout is.</p>
-			  <a href="#" style="outline: none; border-bottom: solid 1px transparent;"> <button class="flip-box-button"> Learn More</button> </a>
-
+			  <h3  id="sh11" class="flip-box-header">About</h3>
+			  <p id="sh12"> A short sentence describing this callout is.</p>
+			  <button id="btn6"  onmouseover="ch11()" onmouseout="ch12()"  class="flip-box-button">Hover Demo</button> 
+<script> 
+function ch11() {
+document.getElementById("img6").style.backgroundImage = "url('images/rasa.gif')";
+document.getElementById("sh11").style.color = "transparent";
+document.getElementById("sh12").style.color = "transparent";
+document.getElementById("btn6").style.color = "transparent";
+document.getElementById("btn6").style.borderColor = "transparent";
+}
+function ch12() {
+document.getElementById("img6").style.backgroundImage = "url('images/chatt.jpg')";
+document.getElementById("sh11").style.color = "white";
+document.getElementById("sh12").style.color = "white";
+document.getElementById("btn6").style.color = "white";
+document.getElementById("btn6").style.borderColor = "white";
+}
+</script> 
 			</div>
 		  </div>
 		</div>
@@ -442,47 +527,7 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 					</section>
 
 				<!-- Three -->
-					<section id="pro" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Major Projects  </h2>
-								<p>Below are few of my major projects that I've build including my professional and personal work.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-paper-planez">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ac" style="background-color: transparent; ">Agricultural Chatbot</a> </h5>
-								
-
-								</li>
-								<li class="icon solid fa-laptopz">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cm" style="background-color: transparent; ">Crisis Management</a> </h5>
-									
-								</li>
-								<li class="icon solid fa-codez">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#sr" style="background-color: transparent; ">Speech recognition </a> </h5>
-									
-									
-								</li>
-								<li class="icon solid fa-headphones-altz">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#lg" style="background-color: transparent; ">Song Lyrics Generator</a> </h5>
-
-								</li>
-								<li class="icon fa-heartz">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#iu" style="background-color: transparent; ">INR-USD Time Series analysis</a> </h5>
-
-								
-								</li>	
-								<li class="icon fa-flagz">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cb" style="background-color: transparent; ">Cat breed classifier</a> </h5>
-									
-								</li>
-								<li class="icon fa-flagz">
-									<h5> <a href="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#cm" style="background-color: transparent; ">Crisis Management</a> </h5>
-								
-								</li>
-							</ul>
-						</div>
-					</section>
+					
 				</div>
 				<section id="one" class="wrapper style1 special " style="background-color: black;">
 					
