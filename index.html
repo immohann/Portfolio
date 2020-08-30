@@ -249,16 +249,17 @@ text-transform: uppercase;
         <div class="inner color-white">
           <h3 class="flip-box-header" id="sh1" >About</h3>
 		  <p  id="sh2">A multi-lingual web application to alert users regarding upcoming, and current disaster news along with nearby health centers details. <br> 
-			<br> Modules: <br>Named Entity Recognition  |  Disaster Classifier  |  Disaster type classifier  </p>
+			<br> Modules: <br>| Named Entity Recognition  |  Disaster Classifier  |  Disaster type classifier | </p>
 		  <button id="btn1"  onmouseover="ch1()" onmouseout="ch2()" class="flip-box-button"> Hover Demo</button>
 <script> 
 function ch1() {
-document.getElementById("img1").style.backgroundImage = "url('images/denoiz.gif')";
+document.getElementById("img1").style.backgroundImage = "url('images/disaster.gif')";
 document.getElementById("sh1").style.color = "transparent";
 document.getElementById("sh2").style.color = "transparent";
 document.getElementById("btn1").style.color = "transparent";
 document.getElementById("btn1").style.borderColor = "transparent";
 }
+
 function ch2() {
 document.getElementById("img1").style.backgroundImage = "url('images/cris.jpg')";
 document.getElementById("sh1").style.color = "white";
@@ -284,7 +285,9 @@ document.getElementById("btn1").style.borderColor = "white";
       <div class="flip-box-back text-center" id="img2" style="background-image: url('images/facee.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
         <div class="inner color-white">
           <h3  id="sh3" class="flip-box-header">About</h3>
-          <p  id="sh4">A short sentence describing this callout is.</p>
+          <p  id="sh4">Live-Face Recognition module for authentication of users for the transaction of money on the corporation portal.  
+			  <br> Modules: <br> | Face Recognition | Face Liveliness |
+		  </p>
 		   <button id="btn2"  onmouseover="ch3()" onmouseout="ch4()"  class="flip-box-button"> Hover Demo</button>
 <script> 
 function ch3() {
@@ -312,22 +315,26 @@ document.getElementById("btn2").style.borderColor = "white";
     <div class="flip-box">
       <div class="flip-box-front text-center filter-" style="background-image: url('images/wave.jpg');">
         <div class="inner color-white">
-          <h3 class="flip-box-header">De-Noiser</h3>
-          <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+          <h3 id="h1" class="flip-box-header">De-Noiser</h3>
+          <img id='h2' src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
         </div>
       </div>
       <div class="flip-box-back text-center" id="img3" style="background-image: url('images/wavee.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
         <div class="inner color-white">
           <h3  id="sh5" class="flip-box-header">About</h3>
-          <p  id="sh6"> A short sentence describing this callout is.</p>
+          <p  id="sh6"> A noise suppressor to mask the noise in the audio, projected on a server for processing a large amount of data.
+			  <br>Modules: <br>| Noise detection | Noise Removal(Library) |
+		</p>
 		  <button id="btn3" onmouseover="ch5()" onmouseout="ch6()"  class="flip-box-button"> Hover Demo</button> 
 <script> 
 function ch5() {
-document.getElementById("img3").style.backgroundImage = "url('images/denoiz.gif')";
+document.getElementById("img3").style.backgroundImage = "url('images/denoise.gif')";
 document.getElementById("sh5").style.color = "transparent";
 document.getElementById("sh6").style.color = "transparent";
 document.getElementById("btn3").style.color = "transparent";
 document.getElementById("btn3").style.borderColor = "transparent";
+document.getElementById("h1").style.color = "transparent";
+
 }
 function ch6() {
 document.getElementById("img3").style.backgroundImage = "url('images/wavee.jpg')";
@@ -335,6 +342,8 @@ document.getElementById("sh5").style.color = "white";
 document.getElementById("sh6").style.color = "white";
 document.getElementById("btn3").style.color = "white";
 document.getElementById("btn3").style.borderColor = "white";
+document.getElementById("h1").style.color = "white";
+
 }
 </script> 
         </div>
@@ -357,7 +366,9 @@ document.getElementById("btn3").style.borderColor = "white";
 		  <div class="flip-box-back text-center" id="img4" style="background-image: url('images/wordss.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
 			<div class="inner color-white" >
 			  <h3 class="flip-box-header" id="sh7">About</h3>
-			  <p id="sh8">A short sentence describing this callout is.</p>
+			  <p id="sh8">Lyrics Generator to create lyrics for given set of input words, using the NLP & LSTM and deployed using flask.
+				  <br>Modules: <br> | Next Word Predictor | 
+			</p>
 			   <button id="btn4" onmouseover="ch7()" onmouseout="ch8()" class="flip-box-button">Hover Demo</button>
 <script> 
 function ch7() {
@@ -392,11 +403,13 @@ document.getElementById("btn4").style.borderColor = "white";
 		  <div class="flip-box-back text-center" id="img5" style="background-image: url('images/mskk.jpg');background-attachment:scroll; background-size: contain ; background-repeat: no-repeat; transition: 0.6s ease;">
 			<div class="inner color-white">
 			  <h3  id="sh9" class="flip-box-header">About</h3>
-			  <p  id="sh10">A short sentence describing this callout is.</p>
+			  <p  id="sh10">Fuzzy Inference System  { FIS } to calculate the possibility of viral in a person by gathering data on breath patterns, oxygen saturation level, and body temperature.
+			<br> Modules:  <br> | FIS | Automation of FIS |
+		</p> 
 			 <button id="btn5"  onmouseover="ch9()" onmouseout="ch10()" class="flip-box-button"> Hover Demo</button> 
 <script> 
 function ch9() {
-document.getElementById("img5").style.backgroundImage = "url('images/lyrics.gif')";
+document.getElementById("img5").style.backgroundImage = "url('images/covid.gif')";
 document.getElementById("sh9").style.color = "transparent";
 document.getElementById("sh10").style.color = "transparent";
 document.getElementById("btn5").style.color = "transparent";
@@ -425,7 +438,10 @@ document.getElementById("btn5").style.borderColor = "white";
 		  <div class="flip-box-back text-center" id="img6" style="background-image: url('images/chatt.jpg');background-attachment:scroll; background-size: cover	 ; background-repeat: no-repeat; transition: 0.6s ease;">
 			<div class="inner color-white">
 			  <h3  id="sh11" class="flip-box-header">About</h3>
-			  <p id="sh12"> A short sentence describing this callout is.</p>
+			  <p id="sh12">Agricultural Chatbot to help the farmers with real-life problems such as enhancing the production, provide suitable suggestions for growing crops, educating them with their rights.
+
+				<br> Modules: <br> | RASA Chatbot | Docker deployment |
+			  </p>
 			  <button id="btn6"  onmouseover="ch11()" onmouseout="ch12()"  class="flip-box-button">Hover Demo</button> 
 <script> 
 function ch11() {
