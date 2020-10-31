@@ -22,18 +22,30 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<style>
+
+		h1,h2{
+			color: white;
+		}
 		html {
 font-family: sans-serif;
 box-sizing: border-box;
 }
 
+p{
+	color: white;
+}
 *, *:before, *:after {
 box-sizing: inherit;
 }
 
+li span{
+	color: rgb(21, 255, 0);
+}
 .text-center {
 text-align: center;
 }
@@ -173,6 +185,142 @@ margin-top: 25px;
 padding: 15px 20px;
 text-transform: uppercase;
 }
+
+
+.cta-100 {
+  margin-top: 100px;
+  padding-left: 8%;
+  padding-top: 7%;
+}
+.col-md-4{
+    padding-bottom:20px;
+}
+
+.white {
+  color: #fff !important;
+}
+.mt{float: left;margin-top: -20px;padding-top: 20px;}
+.bg-blue-ui {
+  background-color: #708198 !important;
+}
+figure img{width:300px;}
+
+#blogCarousel {
+  padding-bottom: 100px;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: -50px;
+  height: 50%;
+}
+
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+  background: #708198;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: #0fc9af;
+}
+
+
+
+
+.item-carousel-blog-block {
+  outline: medium none;
+  padding: 15px;
+}
+
+.item-box-blog {
+  border: 1px solid #dadada;
+  text-align: center;
+  z-index: 4;
+  padding: 20px;
+}
+
+.item-box-blog-image {
+  position: relative;
+}
+
+.item-box-blog-image figure img {
+  width: 100%;
+  height: auto;
+}
+
+.item-box-blog-date {
+  position: absolute;
+  z-index: 5;
+  padding: 4px 20px;
+  top: -20px;
+  right: 8px;
+  background-color: #41cb52;
+}
+
+.item-box-blog-date span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.item-box-blog-date span.mon {
+  font-size: 18px;
+}
+
+.item-box-blog-date span.day {
+  font-size: 16px;
+}
+
+.item-box-blog-body {
+  padding: 10px;
+}
+
+.item-heading-blog a h5 {
+  margin: 0;
+  line-height: 1;
+  text-decoration:none;
+  transition: color 0.3s;
+}
+
+.item-box-blog-heading a {
+    text-decoration: none;
+}
+
+.item-box-blog-data p {
+  font-size: 13px;
+}
+
+.item-box-blog-data p i {
+  font-size: 12px;
+}
+
+.item-box-blog-text {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.mt-10 {
+  float: left;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read {
+  cursor: pointer;
+  padding: 4px 20px;
+  float: left;
+  margin-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read:hover {
+  box-shadow: 0px 5px 15px inset #4d5f77;
+}
 	</style>  
 
 </head>
@@ -193,7 +341,7 @@ text-transform: uppercase;
 										<ul>
 											<li><a href="#">Home</a></li>
 											<li><a href="#one" >About</a></li>
-											<li><a href="internship_cv .pdf" target="_blank" >My Resume</a></li>
+											<li><a href="Manmohan_CV.pdf" target="_blank" >My Resume</a></li>
 											<li><a href="#exp">Experience</a></li>
 											<li><a href="#pro">Projects</a></li>
 										</ul>
@@ -250,7 +398,7 @@ text-transform: uppercase;
           <h3 class="flip-box-header" id="sh1" >About</h3>
 		  <p  id="sh2">A multi-lingual web application to alert users regarding upcoming, and current disaster news along with nearby health centers details. <br> 
 			<br> Modules: <br>| Named Entity Recognition  |  Disaster Classifier  |  Disaster type classifier | </p>
-		 <a href=""> <button id="btn1"  onmouseover="ch1()" onmouseout="ch2()" class="flip-box-button"> Hover Demo</button></a>
+		 <a href="https://github.com/immohann/Crisis-Management"> <button id="btn1"  onmouseover="ch1()" onmouseout="ch2()" class="flip-box-button"> Hover Demo</button></a>
 <script> 
 function ch1() {
 document.getElementById("img1").style.backgroundImage = "url('images/disaster.gif')";
@@ -290,10 +438,10 @@ document.getElementById("btn1").style.borderColor = "white";
           <p  id="sh4">Live-Face Recognition module for authentication of users for the transaction of money on the corporation portal.  
 			  <br> Modules: <br> | Face Recognition | Face Liveliness |
 		  </p>
-		<a href="">   <button id="btn2"  onmouseover="ch3()" onmouseout="ch4()"  class="flip-box-button"> Hover Demo</button></a>
+		<a href="https://github.com/immohann/Face-Recognition-DL">   <button id="btn2"  onmouseover="ch3()" onmouseout="ch4()"  class="flip-box-button"> Hover Demo</button></a>
 <script> 
 function ch3() {
-document.getElementById("img2").style.backgroundImage = "url('images/lyrics.gif')";
+document.getElementById("img2").style.backgroundImage = "url('images/fr.gif')";
 document.getElementById("sh3").style.color = "transparent";
 document.getElementById("sh4").style.color = "transparent";
 // document.getElementById("btn2").style.color = "transparent";
@@ -329,7 +477,7 @@ document.getElementById("btn2").style.borderColor = "white";
           <p  id="sh6"> A noise suppressor to mask the noise in the audio, projected on a server for processing a large amount of data.
 			  <br>Modules: <br>| Noise detection | Noise Removal(Library) |
 		</p>
-	<a href="">  <button id="btn3" onmouseover="ch5()" onmouseout="ch6()"  class="flip-box-button"> Hover Demo</button> </a>	
+	<a href="https://github.com/immohann/Denoiser">  <button id="btn3" onmouseover="ch5()" onmouseout="ch6()"  class="flip-box-button"> Hover Demo</button> </a>	
 <script> 
 function ch5() {
 document.getElementById("img3").style.backgroundImage = "url('images/denoise.gif')";
@@ -375,7 +523,7 @@ document.getElementById("h1").style.color = "white";
 			  <p id="sh8">Lyrics Generator to create lyrics for given set of input words, using the NLP & LSTM and deployed using flask.
 				  <br>Modules: <br> | Next Word Predictor | 
 			</p>
-			 <a href="">  <button id="btn4" onmouseover="ch7()" onmouseout="ch8()" class="flip-box-button">Hover Demo</button></a>
+			 <a href="https://github.com/immohann/Lyrics-inducer">  <button id="btn4" onmouseover="ch7()" onmouseout="ch8()" class="flip-box-button">Hover Demo</button></a>
 <script> 
 function ch7() {
 document.getElementById("img4").style.backgroundImage = "url('images/lyrics.gif')";
@@ -414,7 +562,7 @@ document.getElementById("btn4").style.borderColor = "white";
 			  <p  id="sh10">Fuzzy Inference System  { FIS } to calculate the possibility of viral in a person by gathering data on breath patterns, oxygen saturation level, and body temperature.
 			<br> Modules:  <br> | FIS | Automation of FIS |
 		</p> 
-		<a href="">	 <button id="btn5"  onmouseover="ch9()" onmouseout="ch10()" class="flip-box-button"> Hover Demo</button> </a>
+		<a href="https://github.com/immohann/Fuzzy-Inference">	 <button id="btn5"  onmouseover="ch9()" onmouseout="ch10()" class="flip-box-button"> Hover Demo</button> </a>
 <script> 
 function ch9() {
 document.getElementById("img5").style.backgroundImage = "url('images/covid.gif')";
@@ -453,7 +601,7 @@ document.getElementById("btn5").style.borderColor = "white";
 
 				<br> Modules: <br> | RASA Chatbot | Docker deployment |
 			  </p>
-			 <a href="">  <button id="btn6"  onmouseover="ch11()" onmouseout="ch12()"  class="flip-box-button">Hover Demo</button> </a> 
+			 <a href="https://github.com/immohann/RASA-VOF">  <button id="btn6"  onmouseover="ch11()" onmouseout="ch12()"  class="flip-box-button">Hover Demo</button> </a> 
 <script> 
 function ch11() {
 document.getElementById("img6").style.backgroundImage = "url('images/rasa.gif')";
@@ -493,7 +641,7 @@ document.getElementById("btn6").style.borderColor = "white";
 <div class="row">
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s" style="text-align: center;">
-<br>  <img class="img-fluid" src="images/mm.jpg" alt="" style="width: 60%; padding-top: 0;" > <br><br>
+<br>  <img class="img-fluid" src="images/mm.png" alt="" style="width: 80%; padding-top: 0%;" > <br><br>
 </div>
 </div> 
 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="color: aliceblue;">
@@ -528,9 +676,27 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 			  	<h2 style="align-items: center;text-align: center;">WORK EXPERIENCE </h2>
 		<br> <br>
 			  <section id="exp" class="wrapper alt style2">
-						<section class="spotlight">
+				<section class="spotlight">
+					<div class="image"><img src="images/cena.png" alt="" /></div><div class="content">
+						<h5>Machine Learning Intern : <a href="https://cenaura.com/" style="color: white; text-decoration: none;border-bottom: solid 0.5px;"> Cenaura Technologies</a> , Mumbai  <br> <br> 
+						</h5>
+						<p style="color: white; ;"> Developing an automated ‘Hydroponic Farming’ system for lettuce to grow efficiently under a simulated environment using computer vision for disease detection, developed a fuzzy system for disease health grading, and yield estimation using deep learning. Worked on an R&D project for Pre-COVID Estimation to analyze the possibility of the COVID (in percentage) using body temperature, oxygen saturation, and breath pattern to create an auxiliary mask using the Fuzzy Inference System in python. 
+
+						</p>
+					</div><br> <br> <br>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/therex.png" alt="" /></div><div class="content">
+						<h5>Machine Learning Intern : <a href="https://kubair.org/" style="color: white; text-decoration: none;border-bottom: solid 0.5px;"> Therex Technologies</a> , Mumbai  <h5></h5><br> <br> 
+
+						<br><br>
+						<p style="color: white; font-family: Courier New', Courier, monospace;">Worked on Human-AI hybrid technology: HITL (Human In The Loop) and CC (Cognitive Computing). Created an AI module 'Denoiser' using Deep-Learning-fundamentals to detect and reduce the specific type of noise present in the audio.
+						</a></p>
+					</div><br>
+				</section>
+				<section class="spotlight">
 							<div class="image"><img src="images/pic05.png" alt="" /></div><div class="content">
-								<h5>Machine Learning Intern at <a href="www.blocklogy.org" style="color: white; text-decoration: none;border-bottom: solid 0.5px;"> Blocklogy</a> , Mumbai  <br> <br> 
+								<h5>Machine Learning Intern at <a href="https://www.blocklogy.org/" style="color: white; text-decoration: none;border-bottom: solid 0.5px;"> Blocklogy Edutech</a> , Mumbai  <br> <br> 
 								</h5>
 								<p style="color: white; ;"> Collaboratively worked with a team of 2 under the guidance of a mentor, researched, constructed, and improved a moral, and reliable 'Agricultural Chatbot' to help the farmers with real-life problems based on cultivation, resources they can use and a lot more, by using Rasa-NLU and Rasa-Core.
 									Created a Job Recommender System based on the skills present on a resume by using ML in python.
@@ -554,11 +720,210 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 							</div><br>
 						</section>
 					</section>
+				</section>
 
-				<!-- Three -->
+
+
+			<!-- Mini-Proj -->
+			<section id="one" class="wrapper style1 special " style="background-color: black; padding-left:0; margin-left:0; padding-top:0 ;">
+				<h2 style="align-items: center;text-align: center;">Projects </h2>
+
+				<div class="container cta-100 " style="padding-top: 0%;">
+					<div class="container">
+					  <div class="row blog">
+						<div class="col-md-12">
+						  <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+							
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+							  <div class="carousel-item active">
+								<div class="row">
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										
+										<figure> <img alt="" src="/images/ed.jpeg"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>Eng-Hin Encoder-Decoder</h5>
+										  </a>
+										</div>
+										<!--Data-->
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A Eng-To-Hindi Text Translator using LSTM Encoder-Decoder system.</p>
+										</div>
+										<div class="mt"> <a href="https://github.com/immohann/Text-Translation-Encoder-Decoder" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										<!--Date-->
+										<!--Image-->
+										<figure> <img alt="" src="/images/ts.jpeg"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>INR-USD analysis</h5>
+										  </a>
+										</div>
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A time-series predicting model for predicting INR value agains USD currency, using last 10 years Dataset with Neural Networks</p>
+										</div>
+										<div class="mt"> <a href="https://github.com/immohann/INR-USD-Analysis" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										<!--Date-->
+										<!--Image-->
+										<figure> <img alt="" src="/images/cc.jpeg"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>Cat-Breed-Classifier</h5>
+										  </a>
+										</div>
+										<!--Data-->
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A classifier to categorize the breed of cats into 4 types on feeding the input image of a cat using Convolutional Neural Network with Tensorflow.</p>
+										</div>
+										<div class="mt"> <a href="https://github.com/immohann/Cat-Breed-Classifier" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								</div>
+								<!--.row-->
+							  </div>
+							  <!--.item-->
+							<!--.carousel-inner-->
+						  </div>
+						  <!--.Carousel-->
+						</div>
+					  </div>
+					</div>
+				  </div>
+				  
+				  
+									
+						<div class="row blog">
+						<div class="col-md-12">
+						  <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+							
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+						
+							  <!--.item-->
+							  <div class="carousel-item active">
+								<div class="row">
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										<!--Date-->
+										<!--Image-->
+										<figure> <img alt="" src="/images/bc.jpeg"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>Butterfly-Classifier</h5>
+										  </a>
+										</div>
+										<!--Data-->
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A multi-class classification approach to categorize the type of Butterfly using Transfer Learning from CNN 'inception_V3' model in Tensorflow.</p>
+										</div>
+										<div class="mt"> <a href="https://github.com/immohann/Butterfly-Classifier" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										<!--Date-->
+										<!--Image-->
+										<figure> <img alt="" src="/images/cf.png"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>City-Fire-Department</h5>
+										  </a>
+										</div>
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A 3D website for city fire department to update,view, enter, delete records and reports.</p>
+										</div>
+										<div class="mt"> <a href="https://github.com/immohann/city-fire-department" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								  <div class="col-md-4" >
+									<div class="item-box-blog">
+									  <div class="item-box-blog-image">
+										<!--Date-->
+										<!--Image-->
+										<figure> <img alt="" src="/images/sr.jpeg"> </figure>
+									  </div>
+									  <div class="item-box-blog-body">
+										<!--Heading-->
+										<div class="item-box-blog-heading">
+										  <a href="#" tabindex="0">
+											<h5>TF Speech Recognition</h5>
+										  </a>
+										</div>
+										
+										<!--Text-->
+										<div class="item-box-blog-text">
+										  <p>A speech recognition module for transcribing an audio file using CNN, basically performing a classification approach.</p>
+										</div>
+										 <div class="mt"> <a href="https://github.com/immohann/TF_Speech_Recognition" tabindex="0" class="btn bg-blue-ui white read">CODE</a> </div>
+										<!--CODE Button-->
+									  </div>
+									</div>
+								  </div>
+								  
+								</div>
+								<!--.row-->
+							  </div>
+							  <!--.item-->
+							</div>
+							<!--.carousel-inner-->
+						  </div>
+						  <!--.Carousel-->
+						</div>
+					  </div>
+					</div>
+				  </div>		<!-- Three -->
 					
 				</div>
-				<section id="one" class="wrapper style1 special " style="background-color: black;">
+				<section id="one" class="wrapper style1 special " style="background-color: black; padding: 15%; padding-top:7%">
 					
 					<div class="inner">
 						<header class="major">
@@ -567,192 +932,22 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 							
 						</header>
 						<ul class="icons major" style="color: aliceblue; font-family:monospace; text-align: left;">
-                        <li> > A research paper on ‘Automated identification of disaster news using machine learning and natural language processing’ is accepted and remains due for the IEEE conference presentation on (3rd July 2020).</li>
-						<li> <br>> Deep Learning Specialization (deeplearning.ai) - Coursera -2020</li>
-						<li> <br>> Machine Learning (Stanford University) - Coursera-2019</li>
-						<li> <br>> Tensorflow in Practice Specialization (deeplearning.ai) - Coursera-2020</li>
-						<li> <br>> Data structures and algorithms: ELITE (IIT Madras) - NPTEL-2019</li>
+                        <li><br> <span>> </span>The research paper titled <span>‘Automated identification of disaster news using machine learning and natural language processing’<span>  published through IEEE DOI:10.1109/ICESC48915.2020.9156031</span></li>
+                        <li><br> <span>></span> The research paper titled <span>‘Noise Reduction from Audio using CNN and Denoiser’</span>  accepted by the SPRINGER publication, presented at the FRSM conference by NIT Silchar.</li>
+                        <li> <br><span>></span> Ongoing research work on paper titled: <span> ‘Lyrics Inducer using LSTM Networks’</span></li>
+                        <li> <br><span>> </span>Ongoing research work on paper titled: <span> ‘Fractal based speech emotion detection using CNN’</span></li>
+                        <li> <br><span>> </span>Ongoing research work on paper titled: <span>‘Fuzzy Inference System for Early Prediction of Covid’</span></li>
+                        <li> <br><span>> </span>Ongoing research work on paper titled:<span> ‘Tensorflow based Story Plot Recommender using LSTM network’</span></li>
+						<li> <br><span>> </span> <span>	Deep Learning Professional</span>  Certification (deeplearning.ai) - Coursera -2020</li>
+						<li> <br><span>> </span> <span>Machine Learning </span> Certification  (Stanford University) - Coursera-2019</li>
+						<li> <br><span>> </span> <span>Tensorflow in Practice Specialization</span>  Certification  (deeplearning.ai) - Coursera-2020</li>
+						<li> <br><span>> </span> <span>Data structures and algorithms: ELITE</span> Certification  (IIT Madras) - NPTEL-2019</li>
 
 						</ul>
 					</div>
 
 
 				</section>
-
-<!-- modals -->
-  <!-- rasa -->
-  <div class="modal fade" id="ac" role="dialog" >
-    <div class="modal-dialog" >
-    
-      <!-- Modal content-->
-      <div class="modal-content"  >
-        <div class="modal-header" >
-          <h4 style="color: black; padding-top: 30px;" >Agricultural Chatbot</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/RASA-VOF">RASA (Private)</a> <br><br>
-			<p> Created an ‘Agricultural Chatbot’ to help the farmers with real-life problems using Rasa-NLU and Rasa-Core, faced a lot of dependencies, trigger, and deployment issues. worked along with my team under the guidance of a mentor and successfully implemented it. This project was a part of the work assigned during the Internship at Blocklogy, hence the availabilty of the code will is not feasible.</p>
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- crisis -->
-  <div class="modal fade" id="cm" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">Crisis Management</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/crisis-alert">CRISIS (Private: under progress)</a> <br><br>
-			<p>Building a web app using HTML5, CSS3 with ML essentials as the foundation for crisis management used to report and alert the user via notifications on the device along with the precautionary steps and nearby healthcare centers. This project is managed along with a team of 6 as a part of Smart India Hackathon competetion. </p>
-			<br> <br>
-			Below is the snippet of result: 
-			<img style="width: 100%;" src="images/disaster.gif" alt="loading..">
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
- 
-
-
-  <!-- lg -->
-  <div class="modal fade" id="lg" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">Lyrics Generator</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/lyrics-inducer">LYRICS</a>	<br><br>
-			<p>Created a Lyrics Generator using the NLP, LSTM model in Tensorflow to create song lyrics for a given set of input words. The model bugged with lower accuracy but I was able to preprocess and hyper tune the parameters to increase accuracy by 16.4% (72.3 to 84.2)% and the final loss was 0.8. It was a self experimental project work.
-				
-				<br> <br>
-			Below is the snippet of result: <img style="width: 100%;" src="images/lyrics.gif" alt="loading..">
-			</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
-
-   <!-- sr -->
-   <div class="modal fade" id="sr" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">Speech Recognition</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/speech-recognition">SPEECH</a>	<br><br>
-			
-			<p> Developed a framework for speech recognition using Neural Networks in Tensorflow utilizing AI standards to convert speech to text. Was successfully able to implement and hyper tune the model to increase its recognitional accuracy by 7% i.e from 77.4% to 84.5% as a part of my acadamic mini-project.
-				<br> <br>
-			Below is the snippet of result:    
-				<img style="width: 100%;" src="images/theo.gif" alt="loading..">
-			</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
-  <!-- time series -->
-  <div class="modal fade" id="iu" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">INR-USD Time Series Analysis</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/INR-USD-Analysis">INR-USD</a> <br><br>
-			<p> Performed time series analysis on Indian currency (INR) value compared to USD using Sequence modeling, LSTM in TF. Initially, I received relatively high mae(mean squared error) which was further reduced by  93% to (6.7 to 0.3) by hyper-tuning of the parameters. Self experimental work.
-				<br> <br>
-				Below is the snippet of result: 
-					<img style="width: 100%;" src="images/ts.gif" alt="loading..">
-			</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
-  <!-- cat breed -->
-  <div class="modal fade" id="cb" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">Cat Breed Classifier</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/Cat-Breed-Classifier">CAT-BREED</a>	<br><br>
-			
-			<p> Developed a cat breed classifier using the essentials of CNN in TF to get the breed of a cat as a result of image input. Received poor accuracy around 79.0% but was able to increase the performance by hyper tuning the dataset and using image augmentation to get  86.6% accuracy with correctly identifying the breeds. Self experimental work.</p>
-			<br> <br>
-			Below is the snippet of result: 
-			<img style="width: 95%;" src="images/cat.gif" alt="loading..">
-		</div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-
-  <!-- rasa -->
-  <div class="modal fade" id="cm" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 style="color: black; padding-top: 30px;">Crisis Management</h4>
-        </div>
-        <div class="modal-body">
-			Github link: <a style="color: black; text-decoration: none;" href="https://github.com/mohanqwerty5/crisis-alert">CRISIS</a>	<br><br>
-			<p> under construction</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
 
 
 
@@ -764,8 +959,8 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 								<p>A resume speaks the personality.</p>
 							</header>
 							<ul class="actions stacked">
-								<li><a href="internship_cv .pdf" target="_blank" class="button fit primary">Open Resume</a></li>
-								<li><a href="" class="button fit" download="internship_cv.pdf">Download</a></li>
+								<li><a href="Manmohan_CV.pdf" target="_blank" class="button fit primary">Open Resume</a></li>
+								<li><a href="" class="button fit" download="Manmohan_CV.pdf">Download</a></li>
 							</ul>
 						</div>
 					</section>
@@ -779,7 +974,7 @@ industry problem.Aspiring for the opportunity to develop skills, use my abilitie
 	
 							</ul>
 						<ul class="copyright">
-							<li>&copy; < immohann />  </li><li>Design: Made with < / > </li>
+							<li>&copy; < immohann />  </li><li> < Made with ❤ / > </li>
 						</ul>
 					</footer>
 

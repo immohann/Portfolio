@@ -2113,11 +2113,13 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		padding: 3%;
 	}
 
 		.image img {
-			border-radius: 3px;
-			display: block;
+			/* border-radius: 3px;
+			display: block; */
+			border: 3px solid black;
 		}
 
 		.image.left {
@@ -2149,6 +2151,14 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.img-thumb{
+			padding: 10% 0%;
+		}
+
+		.img-fluid{
+			border: 4px solid white;
+		}
 
 /* List */
 
@@ -2721,23 +2731,23 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 
 		.spotlight:nth-child(6) {
