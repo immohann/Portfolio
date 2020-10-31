@@ -295,6 +295,9 @@ input, select, textarea {
 	}
 
 
+/* icons */
+
+
 /* Row */
 
 	.row {
@@ -2071,7 +2074,7 @@ input, select, textarea {
 			width: calc(3em + 2px);
 		}
 
-			.icon.major:before {
+			.icon.major :before {
 				-moz-transform: rotate(45deg);
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
@@ -2079,6 +2082,8 @@ input, select, textarea {
 				display: inline-block;
 				font-size: 1.5em;
 			}
+
+			
 
 			@media screen and (max-width: 736px) {
 
